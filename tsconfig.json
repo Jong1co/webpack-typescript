@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es6" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+    "jsx": "react-jsx" /* Specify what JSX code is generated. */,
+
+    /* Modules */
+    "module": "ESNext" /* Specify what module code is generated. */,
+    "rootDir": "src" /* Specify the root folder within your source files. */,
+    "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
+    "baseUrl": "./src" /* Specify the base directory to resolve non-relative module names. */,
+    "resolveJsonModule": true /* Enable importing .json files. */,
+
+    /* JavaScript Support */
+    "allowJs": true /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */,
+
+    /* Emit */
+
+    "noEmit": true /* Disable emitting files from a compilation. */,
+
+    /* Interop Constraints */
+    "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
+    /**  */
+    "allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+    "noUnusedParameters": true /* Raise an error when a function parameter isn't read. */,
+    "noFallthroughCasesInSwitch": true /* Enable error reporting for fallthrough cases in switch statements. */,
+
+    /* Completeness */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonJS",
+      "moduleResolution": "Node",
+      "target": "es5",
+      "esModuleInterop": true
+    }
+  }
+}
