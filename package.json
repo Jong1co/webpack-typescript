@@ -15,7 +15,7 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "start": "webpack"
+    "start": "webpack serve"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",

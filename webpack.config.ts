@@ -16,7 +16,7 @@ const config = {
     main: path.resolve(__dirname, "src/index.tsx")
   },
   output: {
-    path: "/dist",
+    path: path.resolve(__dirname, "dist"),
     filename: `[name].js`
   },
   module: {
@@ -52,7 +52,15 @@ const config = {
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })]
+  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })],
+  devServer: {
+    // inline: false,
+    // historyApiFallback: true, // react router
+    port: 7001
+    // contentBase: "./dist",
+    // devMiddleware: { publicPath: "/dist/" },
+    // static: { directory: path.resolve(__dirname) }
+  }
 };
 
 export default config;
